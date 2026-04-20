@@ -1,0 +1,444 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&family=Sansita+Swashed:wght@300..900&display=swap');
+
+:root {
+    --home-bg: #FBFADA;
+    --models-bg: #12372A;
+    --ink-dark: #1f2a1f;
+    --ink-light: #f5f7f2;
+    --accent: #436850;
+    --card-shadow: 0 14px 36px rgba(18, 55, 42, 0.18);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Sansita Swashed', serif;
+    color: var(--ink-dark);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+h1 {
+    font-family: 'Sansita Swashed', serif;
+    letter-spacing: 0.04em;
+    font-size: clamp(1.2rem, 3.5vw, 2.8rem);
+    color: #FBFADA;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6,
+.navbar-brand {
+    font-family: 'Lexend Zetta', sans-serif;
+    letter-spacing: 0.03em;
+}
+
+p {
+    font-family: 'Lexend Zetta', sans-serif;
+    line-height: 1.65;
+}
+
+.site-nav {
+    background: rgba(18, 55, 42, 0.95);
+}
+
+.site-nav .navbar-brand,
+.site-nav .nav-link,
+.site-nav .dropdown-item {
+    color: #ffffff;
+}
+
+.page-models .site-nav .navbar-brand {
+    color: #ffffff;
+}
+
+.site-nav .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.65);
+}
+
+.site-nav .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.site-nav .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255,255,255,0.95)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.site-nav .nav-link.active,
+.site-nav .nav-link:hover,
+.site-nav .dropdown-item:hover {
+    color: #337058;
+}
+
+.site-nav .dropdown-menu {
+    background: #1f4a39;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.site-footer {
+    padding: 1rem 0;
+    text-align: center;
+    background: rgba(18, 55, 42, 0.95);
+    color: #ffffff;
+    font-size: 0.9rem;
+}
+
+.page-home,
+.page-about {
+    background: var(--home-bg);
+    color: var(--ink-dark);
+}
+
+.page-models,
+.model-viewer-page {
+    background: var(--models-bg);
+    color: var(--ink-light);
+}
+
+.hero {
+    padding: 4rem 1rem 2rem;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: clamp(1.3rem, 3vw, 2.2rem);
+    margin-bottom: 0.8rem;
+}
+
+.hero h2 {
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    margin-bottom: 1.5rem;
+}
+
+.hero p {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.hero-home {
+    text-align: left;
+}
+
+.hero-home h2 {
+    color: #ADBC9F;
+    font-size: clamp(1.15rem, 1.8vw, 1.25rem);
+    margin-bottom: 0.35rem;
+}
+
+.hero-home h1 {
+    color: #125E33;
+    font-size: clamp(2.5rem, 4.8vw, 3.8rem);
+    font-family: 'sansita swashed', cursive;
+    line-height: 1.1;
+    margin-bottom: 0.9rem;
+}
+
+.hero-home p {
+    color: #ADBC9F;
+    font-size: clamp(0.85rem, 1.4vw, 1rem);
+    font-family: 'Lexend Zetta', sans-serif;
+    margin: 0;
+    max-width: 560px;
+}
+
+.hero-home-image {
+    width: 100%;
+    max-width: 560px;
+    border-radius: 20px;
+    display: block;
+    margin-left: auto;
+    box-shadow: 0 16px 34px rgba(18, 55, 42, 0.22);
+}
+
+.menu-grid,
+.models-grid {
+    padding: 1rem 1rem 3rem;
+}
+
+.home-menu-inline {
+    margin-top: 1.5rem;
+    max-width: 660px;
+}
+
+.home-menu {
+    padding: 0 1rem 2rem;
+}
+
+.explore-menu-title {
+    font-family: 'Lexend Zetta', sans-serif;
+    font-size: clamp(0.9rem, 1.3vw, 1.1rem);
+    color: #125E33;
+    margin: 0 0 0.9rem;
+}
+
+.home-menu-row {
+    --bs-gutter-x: 0.8rem;
+    --bs-gutter-y: 0.8rem;
+}
+
+.food-card,
+.models-card {
+    background: rgba(255, 255, 255, 0.65);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: var(--card-shadow);
+    transition: transform 0.25s ease;
+    height: 100%;
+}
+
+.food-card:hover,
+.models-card:hover {
+    transform: translateY(-6px);
+}
+
+.food-link,
+.model-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.food-tile {
+    position: relative;
+    aspect-ratio: 1 / 1;
+    border-radius: 22px;
+}
+
+.food-card img,
+.models-card img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    display: block;
+}
+
+.food-tile img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1);
+    transition: transform 0.35s ease;
+}
+
+.food-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.55rem;
+    padding: 1.25rem;
+    text-align: center;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.76);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.food-overlay h3 {
+    font-size: clamp(0.95rem, 1.8vw, 1.2rem);
+    margin: 0;
+}
+
+.food-overlay p {
+    font-family: 'Lexend Zetta', sans-serif;
+    font-size: clamp(0.62rem, 1vw, 0.82rem);
+    line-height: 1.5;
+    margin: 0;
+    max-width: 14ch;
+}
+
+.food-link:hover .food-overlay,
+.food-link:focus-visible .food-overlay,
+.food-link:focus-within .food-overlay {
+    opacity: 1;
+}
+
+.food-link:hover .food-tile img,
+.food-link:focus-visible .food-tile img,
+.food-link:focus-within .food-tile img {
+    transform: scale(1.06);
+}
+
+.page-about .about-wrap {
+    max-width: 900px;
+    margin: 2rem auto 3rem;
+    padding: 1.5rem;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: var(--card-shadow);
+}
+
+.page-models .models-card {
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.page-models .models-card .card-body {
+    padding: 1rem;
+    color: #ffffff;
+}
+
+.page-models .models-card h3 {
+    margin-bottom: 0.5rem;
+}
+
+.model-viewer-page .model-header {
+    padding: 1rem 1rem 0;
+}
+
+.model-viewer-page .model-header h1 {
+    margin: 0;
+    font-size: clamp(1.1rem, 2.2vw, 1.7rem);
+}
+
+.model-viewer-page .viewer-shell {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 210px);
+    min-height: 420px;
+}
+
+.model-viewer-page .viewer-card {
+    border-radius: 18px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.06);
+    box-shadow: 0 18px 42px rgba(0, 0, 0, 0.32);
+}
+
+.model-viewer-page .model-description {
+    height: 100%;
+    border-radius: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.09);
+    box-shadow: 0 18px 42px rgba(0, 0, 0, 0.22);
+    padding: 1.25rem;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.model-viewer-page .model-description h2 {
+    margin: 0 0 0.65rem;
+    font-size: clamp(1rem, 1.8vw, 1.25rem);
+    color: #FBFADA;
+}
+
+.model-viewer-page .model-description p {
+    margin: 0;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.94);
+}
+
+#threeContainer {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#gui-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 20;
+}
+
+@media (max-width: 768px) {
+    .hero-home {
+        text-align: center;
+    }
+
+    .hero-home p {
+        margin: 0 auto;
+    }
+
+    .hero-home-image {
+        margin: 0 auto;
+    }
+
+    .models-card img {
+        height: 190px;
+    }
+
+    .home-menu-inline {
+        max-width: 100%;
+        margin-top: 0;
+    }
+
+    .home-menu {
+        margin-top: 0.8rem;
+    }
+
+    .home-menu-row {
+        --bs-gutter-x: 0.45rem;
+        --bs-gutter-y: 0.45rem;
+    }
+
+    .menu-tile-col {
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+
+    .food-overlay h3 {
+        font-size: clamp(0.64rem, 2.6vw, 0.74rem);
+    }
+
+    .food-overlay p {
+        font-size: clamp(0.47rem, 1.9vw, 0.56rem);
+    }
+
+    .model-viewer-page .viewer-shell {
+        height: calc(100vh - 250px);
+    }
+
+    .model-viewer-page .viewer-card {
+        border-radius: 12px;
+    }
+
+    .model-viewer-page .model-description {
+        border-radius: 12px;
+        padding: 1rem;
+    }
+
+    .model-viewer-page .model-header h1 {
+        font-size: clamp(1.35rem, 5.4vw, 1.85rem);
+    }
+
+    .model-viewer-page .model-description p {
+        font-size: clamp(0.86rem, 3.2vw, 0.95rem);
+        line-height: 1.55;
+    }
+}
+
+@media (min-width: 992px) {
+    .hero-home {
+        padding-top: 6rem;
+        padding-bottom: 4.5rem;
+    }
+
+    .home-menu {
+        padding-bottom: 2.8rem;
+    }
+}
+
+@media (hover: none) {
+    .food-tile img {
+        transform: none;
+    }
+}

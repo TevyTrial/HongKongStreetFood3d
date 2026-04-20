@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HK Street Food 3D | Egg Tart</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_button.css">
+</head>
+<body class="model-viewer-page page-models" data-model-primary="assets/models/eggtart.glb" data-model-secondary="assets/models/eggtart_metal.glb" data-model-title="Egg Tart">
+    <nav class="navbar navbar-expand-lg site-nav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">HK Street Food 3D</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="modelsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Models</a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="modelsDropdown">
+                            <li><a class="dropdown-item" href="tart.html">Egg Tart</a></li>
+                            <li><a class="dropdown-item" href="waffle.html">Egg Waffle</a></li>
+                            <li><a class="dropdown-item" href="milktea.html">Milk Tea</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="model-header container">
+            <h1>Egg Tart 3D Model</h1>
+        </section>
+
+        <section class="control-panel container">
+            <button id="btn">Play Animation</button>
+            <button id="toggleWireframe">Toggle Wireframe</button>
+            <button id="rotate">Rotate</button>
+            <button id="switchModel">Switch Model</button>
+        </section>
+
+        <section class="container pb-4">
+            <div class="row g-3 align-items-stretch">
+                <div class="col-lg-8">
+                    <div class="viewer-card h-100">
+                        <div class="viewer-shell">
+                            <div id="gui-container"></div>
+                            <canvas id="threeContainer"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+
+                        <h2>Egg Tart</h2>
+                        <p>
+                            The Hong Kong egg tart, also known as “daan6 taat1,” is inspired by both British custard tarts and Portuguese pastel de nata. 
+                            It features a delicate pastry base filled with silky egg custard. It is commonly served warm and is a must-have in local bakeries and dim sum.
+                        </p>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">&copy; 2026 HK Street Food 3D</div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/106/three.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2666677/OrbitControls.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2666677/GLTFLoader.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.9/dat.gui.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+</html>

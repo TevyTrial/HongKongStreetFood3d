@@ -1,0 +1,30 @@
+.control-panel {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+    padding: 1rem;
+}
+
+.control-panel button {
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    background: rgba(251, 250, 218, 0.12);
+    color: #FBFADA;
+    padding: 0.65rem 0.9rem;
+    border-radius: 999px;
+    font-family: 'Lexend Zetta', sans-serif;
+    font-size: 0.68rem;
+    letter-spacing: 0.02em;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.control-panel button:hover {
+    background: rgba(251, 250, 218, 0.24);
+    transform: translateY(-2px);
+}
+
+.control-panel button:disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+    transform: none;
+}
