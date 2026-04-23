@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&family=Sansita+Swashed:wght@300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&family=Manrope:wght@400;500;600;700&family=Sansita+Swashed:wght@300..900&display=swap');
 
 :root {
     --home-bg: #FBFADA;
@@ -280,6 +280,222 @@ p {
     border-radius: 16px;
     background: rgba(255, 255, 255, 0.6);
     box-shadow: var(--card-shadow);
+}
+
+.page-about .hero-about {
+    max-width: 940px;
+    margin: 0 auto;
+    text-align: left;
+    padding-top: 2.7rem;
+    padding-bottom: 0.25rem;
+}
+
+.page-about .hero-about .eyebrow {
+    display: inline-flex;
+    margin: 0 0 0.8rem;
+    padding: 0.3rem 0.75rem;
+    border-radius: 999px;
+    font-family: 'Lexend Zetta', sans-serif;
+    font-size: 0.58rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #FBFADA;
+    background: #125E33;
+}
+
+.page-about .hero-about h1 {
+    color: #125E33;
+    margin-bottom: 1rem;
+}
+
+.page-about .about-header-media {
+    margin: 0 0 1.1rem;
+    border-radius: 18px;
+    overflow: hidden;
+    border: 1px solid rgba(18, 55, 42, 0.16);
+    box-shadow: 0 14px 28px rgba(18, 55, 42, 0.18);
+}
+
+.page-about .about-header-media img {
+    width: 100%;
+    height: clamp(220px, 38vw, 460px);
+    object-fit: cover;
+    display: block;
+}
+
+.page-about .hero-about p,
+.page-about .about-section p,
+.page-about .about-section li,
+.page-about .about-section figcaption {
+    font-family: 'Manrope', sans-serif;
+    line-height: 1.75;
+    font-size: clamp(0.98rem, 1.35vw, 1.06rem);
+    color: #163226;
+}
+
+.page-about .about-section {
+    max-width: 940px;
+    margin-top: 1.1rem;
+    margin-bottom: 1.4rem;
+}
+
+.page-about .about-section h2 {
+    font-size: clamp(0.95rem, 1.8vw, 1.18rem);
+    margin-bottom: 0.85rem;
+    color: #125E33;
+}
+
+.page-about .tech-list {
+    margin: 0.25rem 0 1rem;
+    padding-left: 1.25rem;
+}
+
+.page-about .tech-list li {
+    margin-bottom: 0.35rem;
+}
+
+.page-about .design-grid {
+    margin: 1rem 0;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    align-items: start;
+}
+
+.page-about .design-grid .design-card-planning {
+    width: 100%;
+    max-width: 430px;
+    justify-self: center;
+}
+
+.page-about .design-grid .design-card-prototype {
+    width: 100%;
+    max-width: 310px;
+    justify-self: center;
+}
+
+.page-about .design-grid .process-card img {
+    object-fit: contain;
+    background: #f3f2e6;
+}
+
+.page-about .design-grid .design-card-planning img {
+    aspect-ratio: 5 / 4;
+}
+
+.page-about .design-grid .design-card-prototype img {
+    aspect-ratio: 3 / 4;
+}
+
+.page-about .process-grid {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.page-about .process-card {
+    margin: 0;
+    border-radius: 14px;
+    overflow: hidden;
+    background: #ffffff;
+    border: 1px solid rgba(18, 55, 42, 0.14);
+    box-shadow: 0 10px 24px rgba(18, 55, 42, 0.1);
+}
+
+.page-about .process-card img {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    display: block;
+    background: linear-gradient(135deg, #f8f4d8, #e8efe3);
+}
+
+.page-about .process-card figcaption {
+    margin: 0;
+    padding: 0.75rem 0.85rem;
+    font-size: 0.9rem;
+}
+
+.page-about .audio-process-card {
+    margin-top: 1rem;
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page-about .audio-process-card img {
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+.page-about .video-card {
+    margin-top: 0.75rem;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid rgba(18, 55, 42, 0.18);
+    background: #132c23;
+    box-shadow: 0 16px 30px rgba(18, 55, 42, 0.18);
+}
+
+.page-about .video-grid {
+    margin-top: 0.75rem;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.page-about .video-grid .video-card {
+    margin-top: 0;
+}
+
+.page-about .video-card video {
+    width: 100%;
+    display: block;
+    aspect-ratio: 16 / 10;
+    max-height: none;
+    background: #0f1f19;
+}
+
+.page-about .video-card figcaption {
+    margin: 0;
+    padding: 0.7rem 0.85rem;
+    color: #dce7e0;
+    background: #163428;
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.92rem;
+}
+
+@media (max-width: 991.98px) {
+    .page-about .process-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .page-about .video-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 767.98px) {
+    .page-about .hero-about {
+        padding-top: 2rem;
+    }
+
+    .page-about .about-wrap {
+        padding: 1.1rem;
+    }
+
+    .page-about .process-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .page-about .design-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .page-about .video-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 .page-models .models-card {

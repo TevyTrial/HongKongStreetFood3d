@@ -3,14 +3,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>HK Street Food 3D | About</title>
+    <title>HK Bites 3D | About</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="page-about">
     <nav class="navbar navbar-expand-lg site-nav">
         <div class="container">
-            <a class="navbar-brand" href="index.html">HK Street Food 3D</a>
+            <a class="navbar-brand" href="index.html">HK Bites 3D</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -32,20 +32,152 @@
     </nav>
 
     <main class="container">
-        <section class="hero">
-            <h1>About HK Street Food 3D</h1>
-            <p>This website is an interactive Web 3D application that showcases iconic Hong Kong foods through real-time 3D models.</p>
+        <section class="hero hero-about">
+            <p class="eyebrow">HK Bites 3D</p>
+            <h1>About This Project</h1>
+            <figure class="about-header-media">
+                <img src="assets/images/background.jpg" alt="Hong Kong cha chaan teng interior atmosphere" loading="lazy">
+            </figure>
+            <p>
+                HK Bites 3D is an interactive Web 3D experience that showcases iconic Hong Kong street food using
+                real-time 3D models. Users can explore egg waffle, egg tart, and Hong Kong-style milk tea through
+                animations, camera controls and rendering options such as wireframe and animation mode.
+            </p>
+            <p>
+                The project combines cultural storytelling with modern web technology to create an engaging digital
+                food experience that is easy to explore on both desktop and mobile.
+            </p>
         </section>
 
-        <section class="about-wrap">
-            <h3>What You Can Explore</h3>
-            <p>Egg tart, egg waffle, and milk tea are all represented as dedicated model pages so you can inspect each item in detail.</p>
-            <p>The aim of this project is to combine cultural storytelling with modern web technologies, allowing users to explore familiar local favourites in a more engaging and visual way. </p>
+        <section class="about-wrap about-section">
+            <h2>Design Concept</h2>
+            <p>
+                The visual direction is inspired by the warmth and vibrancy of Hong Kong street food culture. A clean,
+                minimal interface keeps the focus on the 3D models, while consistent colors and straightforward
+                navigation help users move through the site confidently.
+            </p>
+            <p>
+                Basic planning and interface structure were first drafted in Figma to map layout, navigation flow,
+                and interaction priorities before implementation.
+            </p>
+            <div class="design-grid" aria-label="Figma planning and prototype screens">
+                <figure class="process-card design-card-planning">
+                    <img src="assets/images/About/planning.png" alt="Figma planning notes for HK Bites 3D" loading="lazy">
+                    <figcaption>Figma planning board for features and interaction ideas.</figcaption>
+                </figure>
+                <figure class="process-card design-card-prototype">
+                    <img src="assets/images/About/prototype.png" alt="Figma prototype layout for HK Bites 3D" loading="lazy">
+                    <figcaption>Early Figma prototype layout direction.</figcaption>
+                </figure>
+            </div>
+            <p>
+                Each model page includes concise food descriptions so visitors can learn cultural context without feeling
+                overwhelmed.
+            </p>
+        </section>
+
+        <section class="about-wrap about-section">
+            <h2>3D Modelling Process</h2>
+            <p>
+                The 3D assets were created in Blender with optimized geometry and realistic material work suitable for
+                web rendering. Textures were applied to improve detail while keeping performance practical for browser
+                delivery.
+            </p>
+            <p>
+                A full fluid simulation was originally tested for milk tea pouring, but this was not ideal for export and
+                playback in Three.js. A simplified animation method was used instead by adjusting liquid mesh position and
+                shape to simulate pouring and movement.
+            </p>
+            <p>
+                This approach maintains visual quality while improving performance, and is supported by subtle secondary
+                animations to increase realism.
+            </p>
+
+            <div class="process-grid" aria-label="Blender modelling snapshots">
+                <figure class="process-card">
+                    <img src="assets/images/About/cupmodelling.png" alt="Milk tea model process in Blender" loading="lazy">
+                    <figcaption>Milk Tea model setup and animation.</figcaption>
+                </figure>
+                <figure class="process-card">
+                    <img src="assets/images/About/eggwafflemodelling.png" alt="Egg waffle model process in Blender" loading="lazy">
+                    <figcaption>Egg Waffle model setup and animation.</figcaption>
+                </figure>
+                <figure class="process-card">
+                    <img src="assets/images/About/tartmodelling.png" alt="Egg tart model process in Blender" loading="lazy">
+                    <figcaption>Egg Tart model setup and animation.</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="about-wrap about-section">
+            <h2>Render Video</h2>
+            <p>
+                Short render previews are included below to show animation timing and look development for each food
+                model.
+            </p>
+            <div class="video-grid" aria-label="Render videos for three food models">
+                <figure class="video-card">
+                    <video controls preload="metadata" playsinline>
+                        <source src="assets/images/About/Cup.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </figure>
+                <figure class="video-card">
+                    <video controls preload="metadata" playsinline>
+                        <source src="assets/images/About/eggtart.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </figure>
+                <figure class="video-card">
+                    <video controls preload="metadata" playsinline>
+                        <source src="assets/images/About/Waffle.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </figure>
+            </div>
+        </section>
+
+        <section class="about-wrap about-section">
+            <h2>Technologies Used</h2>
+            <ul class="tech-list">
+                <li>HTML5 and CSS3 for structure and styling</li>
+                <li>JavaScript for interaction logic</li>
+                <li>Three.js for real-time 3D rendering in the browser</li>
+                <li>Blender for modelling and animation</li>
+                <li>Adobe Audition for audio editing and cleanup</li>
+            </ul>
+            <p>
+                Lighting was refined through experimentation with GUI controls. Ambient, hemisphere, directional, and
+                under-lighting combinations were tested to achieve a balanced scene.
+            </p>
+        </section>
+
+        <section class="about-wrap about-section">
+            <h2>Audio Implementation</h2>
+            <p>
+                Edited sound effects are triggered by user interaction to reinforce actions and improve immersion. Audio
+                sources were obtained from Pixabay and synchronized with animations after processing in Adobe Audition.
+            </p>
+                <figure class="process-card audio-process-card">
+                    <img src="assets/images/About/auditon.png" alt="Audio editing" loading="lazy">
+                    <figcaption>Audio editing and synchronization in Adobe Audition</figcaption>
+                </figure>
+        </section>
+
+        <section class="about-wrap about-section">
+            <h2>Accessibility Considerations</h2>
+            <p>
+                Accessibility was included throughout design and development: readable text sizing, clear contrast,
+                consistent button styles, and simple navigation patterns all help reduce cognitive load.
+            </p>
+            <p>
+                The interface is intentionally uncluttered so users can focus on interacting with the 3D content.
+            </p>
         </section>
     </main>
 
     <footer class="site-footer">
-        <div class="container">&copy; 2026 HK Street Food 3D</div>
+        <div class="container">&copy; 2026 HK Bites 3D</div>
     </footer>
     
     <script src="js/bootstrap.bundle.min.js"></script>
