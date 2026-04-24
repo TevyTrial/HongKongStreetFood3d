@@ -5,7 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HK Bites 3D | About</title>
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=20260423">
+    <style>
+        /* Fallback critical styles for publishing environments with stale cached CSS. */
+        .page-about .about-wrap {
+            max-width: 900px;
+            margin: 2rem auto 3rem;
+            padding: 1.5rem;
+            border-radius: 16px;
+            background: rgba(255, 255, 255, 0.6);
+            box-shadow: 0 14px 36px rgba(18, 55, 42, 0.18);
+        }
+
+        .page-about .about-header-media {
+            margin: 0 0 1.1rem;
+            border-radius: 18px;
+            overflow: hidden;
+            border: 1px solid rgba(18, 55, 42, 0.16);
+            box-shadow: 0 14px 28px rgba(18, 55, 42, 0.18);
+        }
+
+        .page-about .about-header-media img {
+            width: 100%;
+            height: clamp(220px, 38vw, 460px);
+            object-fit: cover;
+            display: block;
+        }
+
+        .page-about .process-card {
+            margin: 0;
+            border-radius: 14px;
+            overflow: hidden;
+            background: #ffffff;
+            border: 1px solid rgba(18, 55, 42, 0.14);
+            box-shadow: 0 10px 24px rgba(18, 55, 42, 0.1);
+        }
+
+        .page-about .process-card img {
+            width: 100%;
+            aspect-ratio: 16 / 10;
+            object-fit: cover;
+            display: block;
+            background: linear-gradient(135deg, #f8f4d8, #e8efe3);
+        }
+    </style>
 </head>
 <body class="page-about">
     <nav class="navbar navbar-expand-lg site-nav">
