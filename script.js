@@ -72,8 +72,12 @@ function init() {
 
     clock = new THREE.Clock();
     scene = new THREE.Scene();
-    scene.background = new THREE.Color(0xFBFADA);
-    scene.fog = null;
+    // scene.background = new THREE.Color(0xFBFADA);
+    // scene.fog = null;
+
+    const bgTexture = new THREE.TextureLoader().load('assets/images/modelBG.webp');
+    bgTexture.colorSpace = THREE.SRGBColorSpace; // use renderer.outputEncoding = sRGBEncoding already in your code
+    scene.background = bgTexture;
 
     camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 1000);
     camera.position.set(-3, 2.5, 2);
