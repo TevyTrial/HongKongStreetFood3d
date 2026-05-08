@@ -153,6 +153,36 @@
         </section>
 
         <section class="about-wrap about-section">
+            <h2>Texturing Process</h2>
+            <p>
+                Image textures were applied to the 3D models to improve realism and surface detail. 
+                UV unwrapping techniques were used in Blender to correctly map textures onto each object while reducing stretching and distortion.
+            </p>
+            <p>
+                Different materials and texture settings were tested to match the appearance of real Hong Kong food items, such as the glossy surface of milk tea and the baked texture of egg waffles and egg tarts. 
+Shader-based texturing techniques were initially explored during development; however, due to compatibility and rendering issues within the Three.js implementation, 
+image textures were used instead to provide more stable and efficient results for web deployment.
+
+            </p>
+            <p>
+                This approach improved performance while still achieving a visually convincing and immersive presentation.
+            </p>
+
+            <div class="process-grid" aria-label="Blender modelling snapshots">
+                <figure class="process-card">
+                    <img src="assets/images/About/UVUnwrap.png" alt="UV Unwrap process in Blender" loading="lazy">
+                    <figcaption>UV Unwrap process for texture mapping.</figcaption>
+                </figure>
+                <figure class="process-card">
+                    <img src="assets/images/About/shader.png" alt="Shader setup process in Blender" loading="lazy">
+                    <figcaption>Shader setup for realistic material appearance.</figcaption>
+                </figure>
+                
+            </div>
+        </section>
+
+
+        <section class="about-wrap about-section">
             <h2>Render Video</h2>
             <p>
                 Short render previews are included below to show animation timing and look development for each food
@@ -196,15 +226,46 @@
         </section>
 
         <section class="about-wrap about-section">
+            <h2>Lighting Development</h2>
+            <p>
+                Lighting was refined through experimentation with GUI controls. Ambient, hemisphere, directional, and
+                under-lighting combinations were tested to achieve a balanced scene.
+            </p>
+                <figure class="process-card lighting-process-card">
+                    <img src="assets/images/About/light.png" alt="Lighting setup process in Three.js" loading="lazy">
+                    <figcaption>Lighting setup and testing in Three.js.</figcaption>    
+        </section>
+
+        <section class="about-wrap about-section">
             <h2>Audio Implementation</h2>
             <p>
-                Edited sound effects are triggered by user interaction to reinforce actions and improve immersion. Audio
-                sources were obtained from Pixabay and synchronized with animations after processing in Adobe Audition.
+                Lighting played an important role in creating the atmosphere of the 3D scenes. 
+Multiple lighting setups were explored through experimentation and trial-and-error using a GUI control system.
+            </p>
+            <p> 
+                Different light types were implemented and adjusted, including ambient light, hemisphere light, directional light, and under-lighting. 
+These were tested with different intensities, positions, and colour tones to achieve a warm and visually balanced presentation inspired by Hong Kong cafés and street food environments.
+            </p>
+            <p>
+                The lighting controls also allow users to interact with the scene dynamically, helping improve both usability and visual engagement.
             </p>
                 <figure class="process-card audio-process-card">
                     <img src="assets/images/About/auditon.png" alt="Audio editing" loading="lazy">
                     <figcaption>Audio editing and synchronization in Adobe Audition</figcaption>
                 </figure>
+        </section>
+
+        <section class="about-wrap about-section">
+            <h2>Testing and Refinement</h2>
+            <p>
+                Testing was carried out throughout the development process to improve usability, performance, and visual consistency across the website. Different layouts, lighting configurations, animations, and interaction methods were evaluated and refined based on their effectiveness and responsiveness.
+            </p>
+            <p>
+                Feedback received during testing indicated that the user interface and interactive controls functioned correctly and were easy to use. However, the original plain background behind the 3D models appeared visually pale and lacked atmosphere. In response to this feedback, the background was redesigned using an image-based environment to create a warmer and more visually engaging presentation that better matched the Hong Kong food theme.
+            </p>
+            <p>
+                Particular attention was also given to ensuring that the 3D models loaded correctly and that interactive features such as animations, wireframe mode, lighting controls, and camera interactions functioned smoothly. Responsive testing was considered to maintain readability and usability across different screen sizes and devices.
+            </p>
         </section>
 
         <section class="about-wrap about-section">
@@ -217,6 +278,19 @@
                 The interface is intentionally uncluttered so users can focus on interacting with the 3D content.
             </p>
         </section>
+
+        <section class="about-wrap about-section">
+            <h2>Use of AI Tools</h2>
+            <p>
+                AI tools were used during the development process to assist with planning, layout ideas, and refining written content for sections such as the About page.
+            </p>
+            <p>
+                However, all 3D modelling, scene setup, interaction design, animation implementation, lighting configuration, and Three.js development were independently designed and implemented by myself.            </p>
+            </p>
+            <img src="assets/images/About/AI.png" alt="AI tools used for planning and content refinement" loading="lazy">
+        </section>
+
+
     </main>
 
     <footer class="site-footer">
