@@ -48,7 +48,17 @@ var modelConfigs = {
             hemisphere: { intensity: 1.1, skyColor: 0xffffff, groundColor: 0xdedede },
             under: { intensity: 20, color: 0xffffff, x: 0, y: -2.2, z: 0 }
         }
+    },
+    'assets/models/eggwaffle.glb': {
+    camera: { x: -5, y: 2, z: 2 },
+    sound: 'assets/audio/eggwaffle.mp3',
+    lights: {
+        ambient: { intensity: 3, color: 0xd2ffee },
+        direct: { intensity: 4.25, color: 0xffffff, x: 3, y: 5, z: 2 },
+        hemisphere: { intensity: 1.1, skyColor: 0xffffff, groundColor: 0xdedede },
+        under: { intensity: 20, color: 0xffffff, x: 0, y: -2.2, z: 0 }
     }
+}
 };
 
 // Store original camera positions for zoom functionality
